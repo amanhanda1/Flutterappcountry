@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 class country extends StatelessWidget {
-  const country({Key? key}) : super(key: key);
+  final String name;
+  country(this.name);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text('India'),
-        titleTextStyle:
-            TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
+        title: Text(name),
+        titleTextStyle: TextStyle(
+            color: Colors.orange.shade900, fontWeight: FontWeight.w700),
       ),
     );
     ;
